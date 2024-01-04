@@ -21,14 +21,34 @@ ul {
 }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .logo {
@@ -124,11 +144,18 @@ address {
 
 h1 {
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 1.07;
+  }
 }
 
 .button {
@@ -144,7 +171,6 @@ h1 {
   display: block;
   padding: 16px 32px;
   border-radius: 4px;
-  min-width: 169px;
   height: 56px;
   border: none;
   cursor: pointer;
